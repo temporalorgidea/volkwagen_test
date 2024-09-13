@@ -32,8 +32,7 @@ jobs:
 
         - name: Test with Maven
           working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
-          run: mvn test
-
+          run: mvn test -Dtest=/src/test/java/com/volkswagen/
         - name: Publish Check
           uses: LouisBrunner/checks-action@v2.0.0
           if: always()
