@@ -14,6 +14,7 @@ class ReadRobotsDataAdapterTest {
     void creates_a_read_robots_data_adapter() {
         ReadRobotsDataAdapter readRobotsDataAdapter = new ReadRobotsDataAdapter();
         assertThat(readRobotsDataAdapter.readDataFrom(DEFAULT_FILE_PATH)).isNotEmpty();
+        // TODO: HI
     }
 
     @Test
