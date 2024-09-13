@@ -29,7 +29,9 @@ jobs:
         - name: Build with Maven
           working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn clean install
-
+        - name: Where are we
+          working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
+          run: echo pwd
         - name: Test with Maven
           working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn test
