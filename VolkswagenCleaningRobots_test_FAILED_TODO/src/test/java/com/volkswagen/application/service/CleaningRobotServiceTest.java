@@ -95,7 +95,7 @@ public class CleaningRobotServiceTest {
     void returns_a_list_of_robots_with_correct_positions() {
         List<Robot> robots = cleaningRobotService.controlRobots(robotsDataCommand);
         assertThat(robots.get(0).position()).isEqualTo(RobotPosition.from("1 3 N"));
-        assertThat(robots.get(1).position()).isEqualTo(RobotPosition.from("5 1 E"));
+        assertThat(robots.get(1).position()).isEqualTo(RobotPosition.from("5 2 E"));
     }
 
     @Test

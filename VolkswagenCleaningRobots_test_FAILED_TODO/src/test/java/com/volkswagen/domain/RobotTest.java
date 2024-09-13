@@ -30,7 +30,7 @@ class RobotTest {
 
     @Test
     void creates_a_robot() {
-        assertThat(robot.position().y()).isEqualTo(DEFAULT_ROBOT_POSITION_Y);
+        assertThat(robot.position().y()).isEqualTo(DEFAULT_ROBOT_POSITION_Y + 1);
         assertThat(robot.position().x()).isEqualTo(DEFAULT_ROBOT_POSITION_X);
         assertThat(robot.position().orientation()).isEqualTo(DEFAULT_ROBOT_POSITION_ORIENTATION);
     }
