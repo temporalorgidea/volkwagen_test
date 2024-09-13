@@ -27,9 +27,11 @@ jobs:
             java-version: '21'
 
         - name: Build with Maven
+          working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn clean install
 
         - name: Test with Maven
+          working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn test
 
         - name: Publish Check
