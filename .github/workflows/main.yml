@@ -29,11 +29,12 @@ jobs:
         - name: Build with Maven
           working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn clean install
-
+        - name: Where are we
+          working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
+          run: pwd
         - name: Test with Maven
           working-directory: ./VolkswagenCleaningRobots_test_FAILED_TODO
           run: mvn test
-
         - name: Publish Check
           uses: LouisBrunner/checks-action@v2.0.0
           if: always()
